@@ -4,14 +4,21 @@ User:
 	password: String
 	course_id: Long
 	name: String
-	status: String
-	enrolment_type: String
+	enrolment_type_id: String
 	user_type_id: Long
 
-		User(1, n6869378, testPassword, 1, Dominic Bou-Samra, "Deferred", 1, 1)
-		User(2, n4345344, testPassword, 1, Avishay Singh, "Non-Active", 1, 1)
-		User(3, n4564555, testPassword, 1, Wayne Kelly, "Active", 1, 2)
-		User(4, n4564555, testPassword, 1, Another Lecturer, "Active", 1, 2)
+		User(1, n6869378, testPassword, 1, Dominic Bou-Samra, 1, 1)
+		User(2, n4345344, testPassword, 1, Avishay Singh, 1, 1)
+		User(3, n4564555, testPassword, 1, Wayne Kelly, 1, 2)
+		User(4, n4564555, testPassword, 1, Another Lecturer, 2, 2)
+
+EnrolmentType:
+	id: Long,
+	name: String
+
+		EnrolmentType(1, "Full time")
+		EnrolmentType(2, "part time")
+
 
 UserType:
 	id: Long
