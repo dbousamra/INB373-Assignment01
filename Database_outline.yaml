@@ -1,0 +1,74 @@
+User:
+	id: Long
+	number: String
+	password: String
+	course_id: Long
+	name: String
+	status: String
+	enrolment_type: String
+	user_type_id: Long
+
+		User(1, n6869378, testPassword, 1, Dominic Bou-Samra, "Deferred", 1, 1)
+		User(2, n4345344, testPassword, 1, Avishay Singh, "Non-Active", 1, 1)
+		User(3, n4564555, testPassword, 1, Wayne Kelly, "Active", 1, 2)
+		User(4, n4564555, testPassword, 1, Another Lecturer, "Active", 1, 2)
+
+UserType:
+	id: Long
+	name: String
+
+		UserType(1, Student)
+		UserType(2, Lecturer)
+
+
+Faculty:
+	id: Long
+	name: String
+
+		Faculty(1, "Science And Technology")
+		Faculty(2, "Business")
+
+Course:
+	id: Long
+	name: String
+	faculty_id: Long
+
+		Course(1, "Bachelor of Information Technology", 1)
+		Course(2, "Bachelor of Science", 1)
+		Course(3, "Masters of Commerce", 2)
+
+Subjects:
+	id: Long
+	name: String
+	subject_code: String
+	course_id: Long
+	unit_coordinate_id: Long
+
+		Subjects(1, "Web Application Development", "INB373", 1, 3)
+		Subjects(2, "Impact of IT", "INB101", 1, 2)
+		Subjects(3, "Capstone Project", "INB302", 1, 3)
+		Subjects(4, "Introduction to Anatomy", "BOS303", 2, 4)
+
+
+SubjectEnrolments:
+	id: Long,
+	user_id: Long
+	subject_id: Long
+
+		#Dom:
+			SubjectEnrolments(1, 1, 1) #Dominic is enrolled in Web Application Development
+			SubjectEnrolments(4, 1, 2) #Dominic is enrolled in Web Application Development
+			SubjectEnrolments(5, 1, 3) #Dominic is enrolled in Web Application Development
+		#Avishay:
+			SubjectEnrolments(2, 2, 1) #Avishay is enrolled in Web Application Development
+			SubjectEnrolments(6, 2, 2) #Avishay is enrolled in Web Application Development
+		#Wayne:
+			SubjectEnrolments(3, 3, 1) #Wayne is enrolled in Web Application Development (lecturer)
+
+
+
+
+
+
+
+
