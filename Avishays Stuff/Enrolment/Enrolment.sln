@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+# Visual Studio 10
 Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Enrolment", ".", "{942B40A8-10DA-4996-A132-4ED4BC55BFFF}"
 	ProjectSection(WebsiteProperties) = preProject
-		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		TargetFrameworkMoniker = ".NETFramework,Version=v4.0"
 		Debug.AspNetCompiler.VirtualPath = "/Enrolment"
 		Debug.AspNetCompiler.PhysicalPath = "..\Enrolment\"
 		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\Enrolment\"
