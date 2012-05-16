@@ -20,11 +20,11 @@ public partial class Login : System.Web.UI.Page
     {
         SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["LocalTestConnectionString"].ConnectionString);
         con.Open();
-        string cmdStr = "select count(*)from User where number= @username AND password = @password";
+        string cmdStr = "SELECT COUNT(*) FROM [User] WHERE number = @username AND password = @password";
         SqlCommand Checkuser = new SqlCommand(cmdStr, con);
         Checkuser.Parameters.AddWithValue("@username", TextBox1.Text);
         Checkuser.Parameters.AddWithValue("@password", TextBox2.Text);
-        if ((int)Checkuser.ExecuteScalar() > 0)
+        if ((int) Checkuser.ExecuteScalar() > 0)
         {
             Session["New"] = TextBox1.Text;
             Response.Redirect("Default.aspx");
