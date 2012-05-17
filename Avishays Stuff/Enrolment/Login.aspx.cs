@@ -29,6 +29,7 @@ public partial class Login : System.Web.UI.Page
         Checkuser.Parameters.AddWithValue("@password", Login1.Password);
         if ((int) Checkuser.ExecuteScalar() > 0)
         {
+            Session["username"] = Login1.UserName;
             e.Authenticated = true;
         }
     }
