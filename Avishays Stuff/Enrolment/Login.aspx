@@ -16,9 +16,9 @@
                 </p>
             </div>
             <div class="span3">
-                <br>
-                <br>
-                <br>
+                <br />
+                <br />
+                <br />
                 <asp:Login ID="Login1" runat="server" OnAuthenticate="Login1_Authenticate" 
                     Width="349px">
                 </asp:Login>

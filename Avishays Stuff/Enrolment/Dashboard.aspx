@@ -9,7 +9,7 @@
     <br>
     <div class="hero-unit">
         <h1>Welcome
-        <%# User.Identity. %></h1>
+        <%# User.Identity.Name %></h1>
     </div>
     <div class="well summary">
         <ul>
