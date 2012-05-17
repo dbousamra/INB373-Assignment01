@@ -10,17 +10,17 @@
                 <h1>
                     Please login</h1>
                 <p>
-                    To access the great features, analytics and the ability to sell your car with us,
-                    please login.</p>
+                    Subtitle.</p>
                 <p>
-                    <a class="btn btn-primary btn-large">Learn more </a>
+                    <a href="About.aspx" class="btn btn-primary btn-large">Learn more </a>
                 </p>
             </div>
             <div class="span3">
                 <br>
                 <br>
                 <br>
-                <asp:Login ID="Login1" runat="server" OnAuthenticate="Login1_Authenticate">
+                <asp:Login ID="Login1" runat="server" OnAuthenticate="Login1_Authenticate" 
+                    Width="349px">
                 </asp:Login>
             </div>
         </div>
