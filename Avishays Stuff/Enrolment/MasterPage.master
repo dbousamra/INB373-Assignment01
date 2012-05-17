@@ -29,9 +29,13 @@
           <a class="brand" href="Default.aspx">Student Enrolment</a>
           <div class="nav-collapse">
             <ul class="nav">
-              <li class="active"><a href="default.aspx">Home</a></li>              
+              <li id="menu_home"><a href="default.aspx">Home</a></li>              
               <li><a href="About.aspx">About</a></li>
-              <li><a href="Dashboard.aspx">Dashboard</a></li>
+              <asp:LoginView ID="LoginView1" runat="server">
+            <LoggedInTemplate>
+                <li><a href="Dashboard.aspx">Dashboard</a></li>
+            </LoggedInTemplate>
+            </asp:LoginView>              
               <li><a href="Contact.aspx">Contact</a></li>
               <li><asp:LoginStatus ID="LoginStatus1" runat="server" /></li>
             </ul>
@@ -43,7 +47,8 @@
         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
         </asp:ContentPlaceHolder>
         <footer>
-        <p>© Company 2012</p>
+        <p>© Company <asp:Label ID="yearLabel" runat="server" /></asp:Label>
+        </p>
       </footer>
     </div>
     </form>

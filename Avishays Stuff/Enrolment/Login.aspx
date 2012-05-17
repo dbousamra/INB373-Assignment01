@@ -10,7 +10,7 @@
                 <h1>
                     Please login</h1>
                 <p>
-                    Subtitle.</p>
+                    To view your units &amp; grades.</p>
                 <p>
                     <a href="About.aspx" class="btn btn-primary btn-large">Learn more </a>
                 </p>
