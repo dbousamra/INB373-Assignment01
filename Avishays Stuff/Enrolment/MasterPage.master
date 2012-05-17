@@ -4,7 +4,6 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head id="Head1" runat="server">
     <title>Student Enrolment</title>
-    <script src="bootstrap/js/bootstrap.js"></script>
     <link href="bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css" />
     <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet" type="text/css" />
     <style type="text/css">
@@ -41,9 +40,11 @@
         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
         </asp:ContentPlaceHolder>
         <footer>
-        
+        <p>© Company 2012</p>
       </footer>
     </div>
     </form>
 </body>
+<script src="bootstrap/js/jquery-1.7.2.js" type="text/javascript"></script>
+<script src="bootstrap/js/bootstrap.js" type="text/javascript"></script>
 </html>
