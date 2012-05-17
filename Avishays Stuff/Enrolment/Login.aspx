@@ -20,7 +20,9 @@
                 <br />
                 <br />
                 <asp:Login ID="Login1" runat="server" OnAuthenticate="Login1_Authenticate" 
-                    Width="349px">
+                    Width="307px">
+                    <CheckBoxStyle CssClass="loginCheckbox" />
+                    <TitleTextStyle Font-Bold="True" HorizontalAlign="Left" />
                 </asp:Login>
             </div>
         </div>

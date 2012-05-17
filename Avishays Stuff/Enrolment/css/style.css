@@ -1,4 +1,4 @@
-label {
+form.form label {
 	float: left;
 	height: 23px;
 	padding-top: 5px;
@@ -6,7 +6,18 @@ label {
 	margin-right: 10px;
 }
 
-textarea{
+form.form textarea{
 	min-height: 200px;
 	min-width: 500px;
+}
+
+td.loginCheckbox input[type=checkbox]
+{
+    float: left;    
+    margin-right: 10px;
+}
+
+td.loginCheckbox label
+{
+    float: left;    
 }
