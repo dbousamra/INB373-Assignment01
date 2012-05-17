@@ -4,6 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head id="Head1" runat="server">
     <title>Student Enrolment</title>
+    <script src="bootstrap/js/bootstrap.js"></script>
     <link href="bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css" />
     <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet" type="text/css" />
     <style type="text/css">
@@ -25,7 +26,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </a>
-          <a class="brand" href="#">Project name</a>
+          <a class="brand" href="#">Student Enrolment</a>
           <div class="nav-collapse">
             <ul class="nav">
               <li class="active"><a href="#">Home</a></li>
@@ -40,10 +41,9 @@
         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
         </asp:ContentPlaceHolder>
         <footer>
-        <p>© Company 2012</p>
+        
       </footer>
     </div>
     </form>
 </body>
-<script src="bootstrap/js/bootstrap.js"></script>
 </html>
