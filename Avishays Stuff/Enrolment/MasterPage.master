@@ -4,6 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head id="Head1" runat="server">
     <title>Student Enrolment</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
     <link href="bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css" />
     <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet" type="text/css" />
     <style type="text/css">
@@ -28,9 +29,11 @@
           <a class="brand" href="Default.aspx">Student Enrolment</a>
           <div class="nav-collapse">
             <ul class="nav">
-              <li class="active"><a href="#">Home</a></li>
+              <li class="active"><a href="default.aspx">Home</a></li>
+              <li><a href="Login.aspx">Login</a></li>
               <li><a href="About.aspx">About</a></li>
               <li><a href="Dashboard.aspx">Dashboard</a></li>
+              <li><a href="Contact.aspx">Contact</a></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div>
