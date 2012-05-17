@@ -20,11 +20,6 @@ public partial class Login : System.Web.UI.Page
 
     protected void Login1_Authenticate(object sender, AuthenticateEventArgs e)
     {
-        //if (Login1.UserName.Equals("dombou") && Login1.Password.Equals("helloworld"))
-        //{
-        //    e.Authenticated = true;
-        //}
-
         SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["LocalTestConnectionString"].ConnectionString);
         con.Open();
 
@@ -34,14 +29,7 @@ public partial class Login : System.Web.UI.Page
         Checkuser.Parameters.AddWithValue("@password", Login1.Password);
         if ((int) Checkuser.ExecuteScalar() > 0)
         {
-            //Session["New"] = TextBox1.Text;
-            Response.Redirect("Default.aspx");
+            e.Authenticated = true;
         }
-        else
-        {
-            
-
-        }
-
     }
 }
