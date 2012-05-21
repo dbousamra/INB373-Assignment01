@@ -33,7 +33,8 @@
               <li><a href="About.aspx">About</a></li>
               <asp:LoginView ID="LoginView1" runat="server">
             <LoggedInTemplate>
-                <li><a href="Dashboard.aspx">Dashboard</a></li>
+                <li><a href="Subjects.aspx">Subjects</a></li>
+                <li><a href="Dashboard.aspx">Dashboard</a></li>                
             </LoggedInTemplate>
             </asp:LoginView>              
               <li><a href="Contact.aspx">Contact</a></li>
