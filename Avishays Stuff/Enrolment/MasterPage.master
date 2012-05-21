@@ -40,6 +40,7 @@
             </asp:LoginView>              
               <li><a href="Contact.aspx">Contact</a></li>
               <li><asp:LoginStatus ID="LoginStatus1" runat="server" /></li>
+              <li><asp:LoginName ID="LoginName1" runat="server" /></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div>
