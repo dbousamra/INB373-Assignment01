@@ -26,7 +26,7 @@
             <asp:BoundField DataField="course_id" HeaderText="Course ID" SortExpression="course_id" />
         </Columns>
     </asp:GridView>
-    <asp:SqlDataSource ID="Students" runat="server" ConnectionString="<%$ ConnectionStrings:MarksConnectionString %>"
+    <asp:SqlDataSource ID="Students" runat="server" ConnectionString="<%$ ConnectionStrings:LocalTestConnectionString %>"
         SelectCommand="SELECT * FROM [User] WHERE ([number] = @number)">
         <SelectParameters>
             <asp:Parameter Name="number" Type="String" />
