@@ -1,24 +1,33 @@
-div.form label {
-	float: left;
-	height: 23px;
-	padding-top: 5px;
-	min-width: 200px;
-	margin-right: 10px;
+div.form label
+{
+    float: left;
+    height: 23px;
+    padding-top: 5px;
+    min-width: 200px;
+    margin-right: 10px;
 }
 
-div.form textarea{
-	min-height: 200px;
-	min-width: 500px;
+div.form textarea
+{
+    min-height: 200px;
+    min-width: 500px;
+}
+
+footer.footer
+{
+    margin-top: 45px;
+    padding: 35px 0 36px;
+    border-top: 1px solid #E5E5E5;
 }
 
 td.loginCheckbox input[type=checkbox]
 {
-    float: left;    
+    float: left;
     margin-left: 59px;
 }
 
 td.loginCheckbox label
 {
-    float: left; 
-    margin-left: 5px;   
+    float: left;
+    margin-left: 5px;
 }

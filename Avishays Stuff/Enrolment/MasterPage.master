@@ -3,15 +3,16 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head id="Head1" runat="server">
-    <title>Student Enrolment</title>    
+    <title>Student Enrolment</title>
     <link href="bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css" />
     <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet" type="text/css" />
     <link href="css/style.css" rel="stylesheet" type="text/css" />
     <style type="text/css">
-      body {
-        padding-top: 60px;
-        padding-bottom: 40px;
-      }
+        body
+        {
+            padding-top: 60px;
+            padding-bottom: 40px;
+        }
     </style>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
@@ -19,39 +20,59 @@
 <body>
     <form id="form1" runat="server">
     <div class="navbar navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </a>
-          <a class="brand" href="Default.aspx">Student Enrolment</a>
-          <div class="nav-collapse">
-            <ul class="nav">
-              <li id="menu_home"><a href="default.aspx">Home</a></li>              
-              <li><a href="About.aspx">About</a></li>
-              <asp:LoginView ID="LoginView1" runat="server">
-            <LoggedInTemplate>
-                <li><a href="Courses.aspx">Courses</a></li>
-                <li><a href="Subjects.aspx">Subjects</a></li>
-                <li><a href="Dashboard.aspx">Dashboard</a></li>                
-            </LoggedInTemplate>
-            </asp:LoginView>              
-              <li><a href="Contact.aspx">Contact</a></li>
-              <li><asp:LoginStatus ID="LoginStatus1" runat="server" /></li>
-              <li><asp:LoginName ID="LoginName1" runat="server" /></li>
-            </ul>
-          </div><!--/.nav-collapse -->
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span
+                    class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+                </a><a class="brand" href="Default.aspx">Student Enrolment</a>
+                <div class="nav-collapse">
+                    <ul class="nav">
+                        <li class="divider-vertical"></li>
+                        <li id="menu_home"><a href="default.aspx">Home</a></li>
+                        <li class="divider-vertical"></li>
+                        <li><a href="About.aspx">About</a></li>
+                        <li class="divider-vertical"></li>
+                        <li><a href="Contact.aspx">Contact</a></li>
+                        <li class="divider-vertical"></li>                                                
+                    </ul>
+                    <ul class="nav pull-right">
+                        <asp:LoginView ID="LoginView1" runat="server">
+                                    <LoggedInTemplate>
+                        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><asp:LoginName ID="LoginName3" runat="server" />
+                            <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                
+                                        
+                                        <li><a href="Dashboard.aspx">
+                                            <div class="icon-user">
+                                            </div>
+                                            Dashboard </a></li>
+                                        <li>
+                                            <asp:LoginStatus ID="LoginStatus1" runat="server" />
+                                        </li>
+                                    
+                            </ul>
+                        </li>
+                        </LoggedInTemplate>
+                                    <AnonymousTemplate>
+                                        <li>
+                                            <asp:LoginStatus ID="LoginStatus1" runat="server" />
+                                        </li>
+                                    </AnonymousTemplate>
+                                </asp:LoginView>
+                    </ul>
+                </div>
+                <!--/.nav-collapse -->
+            </div>
         </div>
-      </div>
     </div>
     <div class="container">
         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
         </asp:ContentPlaceHolder>
-        <footer>
-        <p>© Company <asp:Label ID="yearLabel" runat="server" /></asp:Label>
+        <footer class="footer">
+        <p class="pull-left">© Company <asp:Label ID="yearLabel" runat="server" /></asp:Label>
         </p>
+        <p class="pull-right"><a href="#">Back to top</a></p>
       </footer>
     </div>
     </form>

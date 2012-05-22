@@ -8,9 +8,7 @@
         <h2>Courses</h2>
         <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="id"
         DataSourceID="Students" CssClass="table table-bordered table-striped">
-        <Columns>
-            <asp:BoundField DataField="id" HeaderText="ID" InsertVisible="False" ReadOnly="True"
-                SortExpression="id" />
+        <Columns>            
             <asp:BoundField DataField="name" HeaderText="Name" SortExpression="name" />
             <asp:BoundField DataField="faculty_id" HeaderText="Faculty ID" SortExpression="faculty_id" />
             <asp:BoundField DataField="course_code" HeaderText="Course Code" SortExpression="course_code" />
