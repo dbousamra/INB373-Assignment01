@@ -1,0 +1,5 @@
+\\psf\Home\Documents\workspace\INB373-Assignment01\Avishays Stuff\DataAccess\DataClasses\bin\Debug\DataClasses.dll
+\\psf\Home\Documents\workspace\INB373-Assignment01\Avishays Stuff\DataAccess\DataClasses\bin\Debug\DataClasses.pdb
+\\psf\Home\Documents\workspace\INB373-Assignment01\Avishays Stuff\DataAccess\DataClasses\obj\x86\Debug\ResolveAssemblyReference.cache
+\\psf\Home\Documents\workspace\INB373-Assignment01\Avishays Stuff\DataAccess\DataClasses\obj\x86\Debug\DataClasses.dll
+\\psf\Home\Documents\workspace\INB373-Assignment01\Avishays Stuff\DataAccess\DataClasses\obj\x86\Debug\DataClasses.pdb

@@ -1,0 +1,9 @@
+\\psf\Home\Documents\workspace\INB373-Assignment01\Avishays Stuff\BusinessTier\bin\Debug\BusinessTier.dll
+\\psf\Home\Documents\workspace\INB373-Assignment01\Avishays Stuff\BusinessTier\bin\Debug\BusinessTier.pdb
+\\psf\Home\Documents\workspace\INB373-Assignment01\Avishays Stuff\BusinessTier\bin\Debug\DataAccess.dll
+\\psf\Home\Documents\workspace\INB373-Assignment01\Avishays Stuff\BusinessTier\bin\Debug\DataAccess.pdb
+\\psf\Home\Documents\workspace\INB373-Assignment01\Avishays Stuff\BusinessTier\obj\x86\Debug\ResolveAssemblyReference.cache
+\\psf\Home\Documents\workspace\INB373-Assignment01\Avishays Stuff\BusinessTier\obj\x86\Debug\BusinessTier.dll
+\\psf\Home\Documents\workspace\INB373-Assignment01\Avishays Stuff\BusinessTier\obj\x86\Debug\BusinessTier.pdb
+\\psf\Home\Documents\workspace\INB373-Assignment01\Avishays Stuff\BusinessTier\bin\Debug\DataClasses.dll
+\\psf\Home\Documents\workspace\INB373-Assignment01\Avishays Stuff\BusinessTier\bin\Debug\DataClasses.pdb
