@@ -33,7 +33,9 @@
                         <li><a href="About.aspx">About</a></li>
                         <li class="divider-vertical"></li>
                         <li><a href="Contact.aspx">Contact</a></li>
-                        <li class="divider-vertical"></li>                                                
+                        <li class="divider-vertical"></li>         
+						<li><a href="./admin/private.aspx">Administration</a></li>                                       
+                        <li class="divider-vertical"></li>         
                     </ul>
                     <ul class="nav pull-right">
                         <asp:LoginView ID="LoginView1" runat="server">

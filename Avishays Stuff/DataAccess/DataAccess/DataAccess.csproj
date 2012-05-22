@@ -57,6 +57,7 @@
     </Compile>
     <Compile Include="StudentDatasource.cs">
       <DependentUpon>StudentDatasource.xsd</DependentUpon>
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="StudentDatasource.Designer.cs">
       <DependentUpon>StudentDatasource.xsd</DependentUpon>
