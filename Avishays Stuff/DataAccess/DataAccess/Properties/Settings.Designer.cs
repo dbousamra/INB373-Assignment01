@@ -28,9 +28,9 @@ namespace DataAccess.Properties {
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
         [global::System.Configuration.DefaultSettingValueAttribute("Data Source=fastapps04.qut.edu.au;Initial Catalog=n7226837;Integrated Security=Tr" +
             "ue")]
-        public string StudentConnectionStringUSETHIS {
+        public string StudentDatabaseConn {
             get {
-                return ((string)(this["StudentConnectionStringUSETHIS"]));
+                return ((string)(this["StudentDatabaseConn"]));
             }
         }
     }
