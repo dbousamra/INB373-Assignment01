@@ -5,11 +5,13 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
-    <div class="well">
-    <h2>Administration</h2>
-        <p>
+    <div class="page-header">
+    <h1>Administration</h1>
+    </div>
+        
             <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" 
-                DataKeyNames="id" DataSourceID="SqlDataSource1">
+                DataKeyNames="id" DataSourceID="SqlDataSource1" 
+        CssClass="table table-bordered table-striped">
                 <Columns>
                     <asp:BoundField DataField="id" HeaderText="id" InsertVisible="False" 
                         ReadOnly="True" SortExpression="id" />
@@ -24,10 +26,5 @@
                 ConnectionString="<%$ ConnectionStrings:LocalTestConnectionString %>" 
                 SelectCommand="SELECT [id], [number], [password], [name] FROM [User]">
             </asp:SqlDataSource>
-        </p>
-        
-        
-
-
-    </div>
+    
 </asp:Content>
