@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using DataClasses;
 using DataAccess.StudentDatasourceTableAdapters;
 
 namespace BusinessTier
@@ -11,8 +10,9 @@ namespace BusinessTier
     {
         static CourseTableAdapter tableAdapter = new CourseTableAdapter();
 
-        public static StudentDatasource.CourseDataTable getAllCourses()
+        public static DataAccess.StudentDatasource.CourseDataTable getAllCourses()
         {
+           
             return tableAdapter.GetAllCourses();
         }
         //public static void InsertCourse(string name, long faculty_id, string course_code)
