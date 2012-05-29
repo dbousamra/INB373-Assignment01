@@ -13,6 +13,7 @@
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <PlatformTarget>x86</PlatformTarget>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
     <DebugSymbols>true</DebugSymbols>
@@ -57,12 +58,12 @@
     </Compile>
     <Compile Include="StudentDatasource.cs">
       <DependentUpon>StudentDatasource.xsd</DependentUpon>
-      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
     <Compile Include="StudentDatasource.Designer.cs">
-      <DependentUpon>StudentDatasource.xsd</DependentUpon>
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
+      <DependentUpon>StudentDatasource.xsd</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -73,14 +74,17 @@
     </None>
     <None Include="StudentDatasource.xsc">
       <DependentUpon>StudentDatasource.xsd</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="StudentDatasource.xsd">
       <SubType>Designer</SubType>
       <Generator>MSDataSetGenerator</Generator>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <LastGenOutput>StudentDatasource.Designer.cs</LastGenOutput>
     </None>
     <None Include="StudentDatasource.xss">
       <DependentUpon>StudentDatasource.xsd</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>
   <ItemGroup>
