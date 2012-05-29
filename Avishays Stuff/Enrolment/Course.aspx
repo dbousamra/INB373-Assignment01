@@ -5,7 +5,8 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
     <div class="page-header">
         <h1>
-            Course Details</h1>
+            Course Details - <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+        </h1>
     </div>
     <ul class="breadcrumb">
         <li><a href="/Enrolment/Courses.aspx">Courses</a> <span class="divider">/</span> </li>

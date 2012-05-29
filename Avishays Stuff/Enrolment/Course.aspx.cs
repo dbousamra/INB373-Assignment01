@@ -10,5 +10,13 @@ public partial class Course : System.Web.UI.Page
     protected void Page_Load(object sender, EventArgs e)
     {
         string strID = Request.QueryString["id"];
+        if (strID == null)
+        {
+            Response.Redirect("Courses.aspx");
+        }
+        else
+        {
+            Label1.Text = strID;
+        }
     }
 }
