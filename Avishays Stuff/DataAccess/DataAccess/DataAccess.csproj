@@ -57,12 +57,6 @@
     </Compile>
     <Compile Include="StudentDatasource.cs">
       <DependentUpon>StudentDatasource.xsd</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="StudentDatasource.Designer.cs">
-      <DependentUpon>StudentDatasource.xsd</DependentUpon>
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -77,7 +71,6 @@
     <None Include="StudentDatasource.xsd">
       <SubType>Designer</SubType>
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>StudentDatasource.Designer.cs</LastGenOutput>
     </None>
     <None Include="StudentDatasource.xss">
       <DependentUpon>StudentDatasource.xsd</DependentUpon>
