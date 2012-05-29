@@ -11,7 +11,7 @@
     <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="id" DataSourceID="Courses" CssClass="table table-bordered table-striped">
         <Columns>            
             <asp:BoundField DataField="name" HeaderText="Name" SortExpression="name" />
-            <asp:BoundField DataField="faculty_id" HeaderText="Faculty ID" SortExpression="faculty_id" />
+            <asp:BoundField DataField="f_name" HeaderText="Faculty" SortExpression="f_name" />
             <asp:BoundField DataField="course_code" HeaderText="Course Code" SortExpression="course_code" />
             <asp:HyperLinkField DataNavigateUrlFields="id" DataNavigateUrlFormatString="Course.aspx?id={0}" Text="View course details" ControlStyle-CssClass="btn btn-info"/>
         </Columns>
