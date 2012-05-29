@@ -9,7 +9,7 @@
     </div>
     <asp:ObjectDataSource ID="Courses" runat="server" OldValuesParameterFormatString="original_{0}" SelectMethod="GetAllCourses" TypeName="DataAccess.StudentDatasourceTableAdapters.CourseTableAdapter"></asp:ObjectDataSource>
     <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="id" DataSourceID="Courses" CssClass="table table-bordered table-striped">
-        <Columns>            
+        <Columns> 
             <asp:BoundField DataField="name" HeaderText="Name" SortExpression="name" />
             <asp:BoundField DataField="f_name" HeaderText="Faculty" SortExpression="f_name" />
             <asp:BoundField DataField="course_code" HeaderText="Course Code" SortExpression="course_code" />

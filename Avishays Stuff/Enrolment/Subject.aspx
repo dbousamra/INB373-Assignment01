@@ -1,11 +1,11 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="Course.aspx.cs" Inherits="Course" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="Subject.aspx.cs" Inherits="Subject" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
     <div class="page-header">
         <h1>
-            Course Details - <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+            Subject Details - <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
         </h1>
     </div>
     <ul class="breadcrumb">
@@ -48,7 +48,6 @@
                     <asp:BoundField DataField="name" HeaderText="name" SortExpression="name" />
                     <asp:BoundField DataField="subject_code" HeaderText="subject_code" SortExpression="subject_code" />
                     <asp:BoundField DataField="unit_coordinator_id" HeaderText="unit_coordinator_id" SortExpression="unit_coordinator_id" />
-                    <asp:HyperLinkField DataNavigateUrlFields="id" DataNavigateUrlFormatString="Subject.aspx?id={0}" Text="View subject details" ControlStyle-CssClass="btn btn-info"/>
                 </Columns>
             </asp:GridView>
         </div>
