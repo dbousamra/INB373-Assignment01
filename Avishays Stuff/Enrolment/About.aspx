@@ -41,7 +41,7 @@
         </div>
         <div class="span4">
             <div class="thumbnail">
-                <img src="images/about.jpg" alt="" />
+                <img src="assets/images/about.jpg" alt="" />
                 <div class="caption">
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non.</p>
