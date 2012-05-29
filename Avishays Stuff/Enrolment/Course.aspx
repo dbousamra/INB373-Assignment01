@@ -8,13 +8,20 @@
             Course Details</h1>
     </div>
     <ul class="breadcrumb">
-        <li><a href="/Enrolment/Courses.aspx">Home</a> <span class="divider">/</span> </li>
+        <li><a href="/Enrolment/Courses.aspx">Courses</a> <span class="divider">/</span> </li>
         <li class="active">Course Details</li>
     </ul>
     <div class="row">
         <div class="span8">
-            <p>
-            </p>
+            <asp:ObjectDataSource ID="Courses" runat="server" OldValuesParameterFormatString="original_{0}" SelectMethod="GetAllCourses" TypeName="DataAccess.StudentDatasourceTableAdapters.CourseTableAdapter"></asp:ObjectDataSource>
+            <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="id" DataSourceID="Courses" CssClass="table table-bordered table-striped">
+                <Columns>
+                    <asp:BoundField DataField="name" HeaderText="Name" SortExpression="name" />
+                    <asp:BoundField DataField="f_name" HeaderText="Faculty" SortExpression="f_name" />
+                    <asp:BoundField DataField="course_code" HeaderText="Course Code" SortExpression="course_code" />
+                    <asp:HyperLinkField DataNavigateUrlFields="id" DataNavigateUrlFormatString="Course.aspx?id={0}" Text="View course details" ControlStyle-CssClass="btn btn-info" />
+                </Columns>
+            </asp:GridView>
         </div>
         <div class="span4">
             <div class="thumbnail">
@@ -26,13 +33,4 @@
             </div>
         </div>
     </div>
-    <asp:ObjectDataSource ID="Courses" runat="server" OldValuesParameterFormatString="original_{0}" SelectMethod="GetAllCourses" TypeName="DataAccess.StudentDatasourceTableAdapters.CourseTableAdapter"></asp:ObjectDataSource>
-    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="id" DataSourceID="Courses" CssClass="table table-bordered table-striped">
-        <Columns>
-            <asp:BoundField DataField="name" HeaderText="Name" SortExpression="name" />
-            <asp:BoundField DataField="f_name" HeaderText="Faculty" SortExpression="f_name" />
-            <asp:BoundField DataField="course_code" HeaderText="Course Code" SortExpression="course_code" />
-            <asp:HyperLinkField DataNavigateUrlFields="id" DataNavigateUrlFormatString="Course.aspx?id={0}" Text="View course details" ControlStyle-CssClass="btn btn-info" />
-        </Columns>
-    </asp:GridView>
 </asp:Content>
