@@ -23,3 +23,16 @@ A user must be able to enrol in a course
 				They must be able to select a class
 
 A user must be able to see their semester timetable
+
+
+
+What we need:
+
+	CRUD classes (Course.cs etc in the BusinessTier project)
+		Including update methods.
+
+	Table adapters in the DataAccess project
+
+	Pages tidied up
+
+	Flowchart, UML Diagram, Report etc
