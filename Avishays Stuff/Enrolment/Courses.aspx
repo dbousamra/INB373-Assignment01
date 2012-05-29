@@ -13,6 +13,7 @@
             <asp:BoundField DataField="name" HeaderText="Name" SortExpression="name" />
             <asp:BoundField DataField="f_name" HeaderText="Faculty" SortExpression="f_name" />
             <asp:BoundField DataField="course_code" HeaderText="Course Code" SortExpression="course_code" />
+            <asp:BoundField DataField="num_subjects" HeaderText="Subjects" SortExpression="num_subjects" />
             <asp:HyperLinkField DataNavigateUrlFields="id" DataNavigateUrlFormatString="Course.aspx?id={0}" Text="View course details" ControlStyle-CssClass="btn btn-info"/>
         </Columns>
     </asp:GridView>

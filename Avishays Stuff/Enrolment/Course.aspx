@@ -14,13 +14,40 @@
     </ul>
     <div class="row">
         <div class="span8">
-            <asp:ObjectDataSource ID="Courses" runat="server" OldValuesParameterFormatString="original_{0}" SelectMethod="GetAllCourses" TypeName="DataAccess.StudentDatasourceTableAdapters.CourseTableAdapter"></asp:ObjectDataSource>
-            <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="id" DataSourceID="Courses" CssClass="table table-bordered table-striped">
+            <asp:ObjectDataSource ID="Courses" runat="server" OldValuesParameterFormatString="original_{0}" SelectMethod="GetAllSubjectsByCourseID" TypeName="DataAccess.StudentDatasourceTableAdapters.SubjectsTableAdapter" DeleteMethod="Delete" InsertMethod="Insert" UpdateMethod="Update">
+                <DeleteParameters>
+                    <asp:Parameter Name="Original_id" Type="Int64" />
+                    <asp:Parameter Name="Original_name" Type="String" />
+                    <asp:Parameter Name="Original_subject_code" Type="String" />
+                    <asp:Parameter Name="Original_course_id" Type="Int64" />
+                    <asp:Parameter Name="Original_unit_coordinator_id" Type="Int64" />
+                </DeleteParameters>
+                <InsertParameters>
+                    <asp:Parameter Name="name" Type="String" />
+                    <asp:Parameter Name="subject_code" Type="String" />
+                    <asp:Parameter Name="course_id" Type="Int64" />
+                    <asp:Parameter Name="unit_coordinator_id" Type="Int64" />
+                </InsertParameters>
+                <SelectParameters>
+                    <asp:QueryStringParameter Name="CourseID" QueryStringField="id" Type="Int64" />
+                </SelectParameters>
+                <UpdateParameters>
+                    <asp:Parameter Name="name" Type="String" />
+                    <asp:Parameter Name="subject_code" Type="String" />
+                    <asp:Parameter Name="course_id" Type="Int64" />
+                    <asp:Parameter Name="unit_coordinator_id" Type="Int64" />
+                    <asp:Parameter Name="Original_id" Type="Int64" />
+                    <asp:Parameter Name="Original_name" Type="String" />
+                    <asp:Parameter Name="Original_subject_code" Type="String" />
+                    <asp:Parameter Name="Original_course_id" Type="Int64" />
+                    <asp:Parameter Name="Original_unit_coordinator_id" Type="Int64" />
+                </UpdateParameters>
+            </asp:ObjectDataSource>
+            <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="id" DataSourceID="Courses" EmptyDataText="No subjects found." CssClass="table table-bordered table-striped">
                 <Columns>
-                    <asp:BoundField DataField="name" HeaderText="Name" SortExpression="name" />
-                    <asp:BoundField DataField="f_name" HeaderText="Faculty" SortExpression="f_name" />
-                    <asp:BoundField DataField="course_code" HeaderText="Course Code" SortExpression="course_code" />
-                    <asp:HyperLinkField DataNavigateUrlFields="id" DataNavigateUrlFormatString="Course.aspx?id={0}" Text="View course details" ControlStyle-CssClass="btn btn-info" />
+                    <asp:BoundField DataField="name" HeaderText="name" SortExpression="name" />
+                    <asp:BoundField DataField="subject_code" HeaderText="subject_code" SortExpression="subject_code" />
+                    <asp:BoundField DataField="unit_coordinator_id" HeaderText="unit_coordinator_id" SortExpression="unit_coordinator_id" />
                 </Columns>
             </asp:GridView>
         </div>
