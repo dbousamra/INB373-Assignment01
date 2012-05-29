@@ -6,3 +6,7 @@
 \\psf\Home\Documents\workspace\INB373-Assignment01\Avishays Stuff\DataAccess\DataAccess\obj\x86\Debug\ResolveAssemblyReference.cache
 \\psf\Home\Documents\workspace\INB373-Assignment01\Avishays Stuff\DataAccess\DataAccess\obj\x86\Debug\DataAccess.dll
 \\psf\Home\Documents\workspace\INB373-Assignment01\Avishays Stuff\DataAccess\DataAccess\obj\x86\Debug\DataAccess.pdb
+\\psf\Home\Documents\workspace\INB373-Assignment01\Avishays Stuff\DataAccess\DataAccess\bin\Debug\StudentDatasource.cs
+\\psf\Home\Documents\workspace\INB373-Assignment01\Avishays Stuff\DataAccess\DataAccess\bin\Debug\StudentDatasource.xsc
+\\psf\Home\Documents\workspace\INB373-Assignment01\Avishays Stuff\DataAccess\DataAccess\bin\Debug\StudentDatasource.xsd
+\\psf\Home\Documents\workspace\INB373-Assignment01\Avishays Stuff\DataAccess\DataAccess\bin\Debug\StudentDatasource.xss

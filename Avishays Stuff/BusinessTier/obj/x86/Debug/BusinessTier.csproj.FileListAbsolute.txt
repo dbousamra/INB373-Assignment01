@@ -7,3 +7,7 @@
 \\psf\Home\Documents\workspace\INB373-Assignment01\Avishays Stuff\BusinessTier\obj\x86\Debug\BusinessTier.pdb
 \\psf\Home\Documents\workspace\INB373-Assignment01\Avishays Stuff\BusinessTier\bin\Debug\DataClasses.dll
 \\psf\Home\Documents\workspace\INB373-Assignment01\Avishays Stuff\BusinessTier\bin\Debug\DataClasses.pdb
+\\psf\Home\Documents\workspace\INB373-Assignment01\Avishays Stuff\BusinessTier\bin\Debug\StudentDatasource.cs
+\\psf\Home\Documents\workspace\INB373-Assignment01\Avishays Stuff\BusinessTier\bin\Debug\StudentDatasource.xsc
+\\psf\Home\Documents\workspace\INB373-Assignment01\Avishays Stuff\BusinessTier\bin\Debug\StudentDatasource.xsd
+\\psf\Home\Documents\workspace\INB373-Assignment01\Avishays Stuff\BusinessTier\bin\Debug\StudentDatasource.xss
