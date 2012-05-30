@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 10
 Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Enrolment", ".", "{942B40A8-10DA-4996-A132-4ED4BC55BFFF}"
 	ProjectSection(WebsiteProperties) = preProject
-		TargetFrameworkMoniker = ".NETFramework,Version=v4.0"
+		TargetFrameworkMoniker = ".NETFramework,Version=v3.0"
 		ProjectReferences = "{73BB89EA-9CFB-4F94-A75C-92EA56DEB08E}|BusinessTier.dll;{5F01AEBA-27BB-4064-B3CC-55CC62B75B59}|DataAccess.dll;{E8D20267-5C61-4974-A3C5-01B097A07CE5}|DataClasses.dll;"
 		Debug.AspNetCompiler.VirtualPath = "/Enrolment"
 		Debug.AspNetCompiler.PhysicalPath = "..\Enrolment\"
