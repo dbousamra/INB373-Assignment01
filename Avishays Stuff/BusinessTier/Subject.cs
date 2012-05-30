@@ -26,6 +26,12 @@ namespace BusinessTier
         {
 
             return tableAdapter.GetSubjectByID(id);
-        }        
+        }
+
+        public static DataAccess.StudentDatasource.SubjectsDataTable getSubjectsByUserID(long id)
+        {
+
+            return tableAdapter.getSubjectsByUserID(id);
+        }    
     }
 }

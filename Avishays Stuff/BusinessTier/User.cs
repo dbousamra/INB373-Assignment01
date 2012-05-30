@@ -20,5 +20,19 @@ namespace BusinessTier
         {
             return tableAdapter.enrolUserInCourseById(userId, courseId);
         }
+
+        public static DataAccess.StudentDatasource.UserDataTable getUserByID(long id)
+        {
+            return tableAdapter.getUserByID(id);
+        }
+
+        public static DataAccess.StudentDatasource.UserDataTable getUserByName(String name)
+        {
+            return tableAdapter.getUserByName(name);
+        }
+        public static int getUserIDByLoginName(String name)
+        {
+            return int.Parse(tableAdapter.getUserIDByLoginName2(name).ToString());
+        }
     }
 }
