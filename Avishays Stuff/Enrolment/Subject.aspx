@@ -19,6 +19,7 @@
             </ul>
             <div class="row">
                 <div class="span8">
+                    <p>Tutor: <%# DataBinder.Eval(Container.DataItem, "u_name") %></p>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel purus augue, quis tempus ligula. Pellentesque lectus neque, bibendum viverra rhoncus at, posuere quis mauris. Aliquam ligula mi, suscipit gravida ullamcorper sit amet, suscipit non neque. Morbi quis elit lacus, nec ullamcorper neque. Phasellus at magna id lacus porttitor placerat. Duis at ligula sit amet felis lobortis pretium quis vitae magna. Nulla sed est lectus, ut consequat neque. Ut dolor nunc, tincidunt vitae lobortis vitae, feugiat sagittis lorem.</p>
                     <p>
