@@ -7,14 +7,35 @@
         <h1>
             Courses</h1>
     </div>
-    <asp:ObjectDataSource ID="Courses" runat="server" OldValuesParameterFormatString="original_{0}" SelectMethod="GetAllCourses" TypeName="DataAccess.StudentDatasourceTableAdapters.CourseTableAdapter"></asp:ObjectDataSource>
-    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="id" DataSourceID="Courses" CssClass="table table-bordered table-striped">
-        <Columns> 
-            <asp:BoundField DataField="name" HeaderText="Name" SortExpression="name" />
-            <asp:BoundField DataField="f_name" HeaderText="Faculty" SortExpression="f_name" />
-            <asp:BoundField DataField="course_code" HeaderText="Course Code" SortExpression="course_code" />
-            <asp:BoundField DataField="num_subjects" HeaderText="Subjects" SortExpression="num_subjects" />
-            <asp:HyperLinkField DataNavigateUrlFields="id" DataNavigateUrlFormatString="Course.aspx?id={0}" Text="View course details" ControlStyle-CssClass="btn btn-info"/>
-        </Columns>
-    </asp:GridView>
+    <table class="table table-bordered table-striped">
+        <thead>
+            <th colspan="5">
+                Courses
+            </th>
+        </thead>
+        <tbody>
+            <asp:Repeater ID="Repeater2" runat="server" DataSourceID="Courses">
+                <ItemTemplate>
+                    <tr>
+                        <td>
+                            <%# DataBinder.Eval(Container.DataItem, "course_code")%>
+                        </td>
+                        <td>
+                            <%# DataBinder.Eval(Container.DataItem, "name")%>
+                        </td>
+                        <td>
+                            <%# DataBinder.Eval(Container.DataItem, "f_name")%>
+                        </td>
+                        <td>
+                            <%# DataBinder.Eval(Container.DataItem, "num_subjects")%> subjects
+                        </td>
+                        <td>
+                            <a href="Course.aspx?id=<%# DataBinder.Eval(Container.DataItem, "id")%>" class="btn btn-info">Course details</a>
+                        </td>
+                    </tr>
+                </ItemTemplate>
+            </asp:Repeater>
+            <asp:ObjectDataSource ID="Courses" runat="server" OldValuesParameterFormatString="original_{0}" SelectMethod="GetAllCourses" TypeName="DataAccess.StudentDatasourceTableAdapters.CourseTableAdapter"></asp:ObjectDataSource>
+        </tbody>
+    </table>
 </asp:Content>

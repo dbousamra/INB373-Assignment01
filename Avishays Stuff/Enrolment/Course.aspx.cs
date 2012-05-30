@@ -16,7 +16,7 @@ public partial class Course : System.Web.UI.Page
         }
         else
         {
-            Label1.Text = strID;
+            //Label1.Text = strID;
         }
     }
 }

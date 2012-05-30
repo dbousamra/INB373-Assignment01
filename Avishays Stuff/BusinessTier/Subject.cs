@@ -21,14 +21,11 @@ namespace BusinessTier
 
             return tableAdapter.GetAllSubjectsByCourseID(id);
         }
-        //public static void InsertCourse(string name, long faculty_id, string course_code)
-        //{
-        //    tableAdapter.Insert(name, faculty_id, course_code);
-        //}
 
-        //public static void DeleteCustomer(long course_id)
-        //{
-        //    tableAdapter.Delete(course_id);
-        //}
+        public static DataAccess.StudentDatasource.SubjectsDataTable getSubjectsByID(long id)
+        {
+
+            return tableAdapter.GetSubjectByID(id);
+        }        
     }
 }
