@@ -10,9 +10,9 @@
     </div>
     <p>
         Please contact us using this page if you have any questions.</p>
-    <form method="post" action="Contact.aspx" style="" class="form-horizontal" id="contact_form"
+    <form method="post" action="Contact.aspx" class="form-horizontal" id="contact_form"
     name="contact_form">
-    <div class="form-horizontal">
+    <div class="form-horizontal" style="margin-top: 20px;">
         <fieldset>
             <div class="control-group">
                 <label class="control-label" for="name">
