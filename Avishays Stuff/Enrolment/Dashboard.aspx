@@ -13,7 +13,9 @@
                 <div class="span6">
                     <h2>
                         Welcome
-                        <%# User.Identity.Name %></h2>
+                        <%# DataBinder.Eval(Container.DataItem,"name") %>
+                        <small>
+                            <%# User.Identity.Name %></small></h2>
                     <p>
                         Below is your user information.</p>
                     <table class="table table-bordered table-striped">
@@ -66,23 +68,28 @@
                 <div class="span6" style="display: <%# System.Convert.IsDBNull(DataBinder.Eval(Container.DataItem, "course_name")) ? "none" : "block"%>;">
                     <h2>
                         <%# DataBinder.Eval(Container.DataItem,"course_name") %></h2>
-                        <p>You are following these subjects:</p>
+                    <p>
+                        You are following these subjects:</p>
                     <table class="table table-bordered table-striped">
                         <tbody>
                             <asp:Repeater ID="Repeater1" runat="server" DataSourceID="ObjectDataSource2">
-                            <ItemTemplate>
-                            <tr>
-                                <td>
-                                     <%# DataBinder.Eval(Container.DataItem,"subject_code") %>
-                                </td>
-                                <td>
-                                    <%# DataBinder.Eval(Container.DataItem,"name") %>
-                                </td>
-                                <td>
-                                    <a href="Subject.aspx?id=<%# DataBinder.Eval(Container.DataItem, "subject_id")%>" class="btn btn-info"><div class="icon-info-sign icon-white"></div></a>
-                                </td>
-                            </tr>
-                            </ItemTemplate></asp:Repeater>
+                                <ItemTemplate>
+                                    <tr>
+                                        <td>
+                                            <%# DataBinder.Eval(Container.DataItem,"subject_code") %>
+                                        </td>
+                                        <td>
+                                            <%# DataBinder.Eval(Container.DataItem,"name") %>
+                                        </td>
+                                        <td>
+                                            <a href="Subject.aspx?id=<%# DataBinder.Eval(Container.DataItem, "subject_id")%>" class="btn btn-info">
+                                                <div class="icon-info-sign icon-white">
+                                                </div>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </ItemTemplate>
+                            </asp:Repeater>
                         </tbody>
                     </table>
                 </div>
