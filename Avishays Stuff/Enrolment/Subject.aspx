@@ -11,8 +11,8 @@
                 </h1>
             </div>
             <ul class="breadcrumb">
-                <li><a href="/Enrolment/Courses.aspx">Courses</a> <span class="divider">/</span> </li>
-                <li><a href="/Enrolment/Course.aspx?id=<%# DataBinder.Eval(Container.DataItem, "course_id") %>">
+                <li><a href="Courses.aspx">Courses</a> <span class="divider">/</span> </li>
+                <li><a href="Course.aspx?id=<%# DataBinder.Eval(Container.DataItem, "course_id") %>">
                     <%# DataBinder.Eval(Container.DataItem, "course_name") %></a> <span class="divider">/</span> </li>
                 <li class="active">
                     <%# DataBinder.Eval(Container.DataItem, "name") %></li>
