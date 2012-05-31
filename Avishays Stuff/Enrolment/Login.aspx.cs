@@ -20,14 +20,17 @@ public partial class Login : System.Web.UI.Page
 
     protected void Login1_Authenticate(object sender, AuthenticateEventArgs e)
     {
-        SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["LocalTestConnectionString"].ConnectionString);
-        con.Open();
+        //SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["LocalTestConnectionString"].ConnectionString);
+        //con.Open();
 
-        string cmdStr = "SELECT COUNT(*) FROM [User] WHERE number = @username AND password = @password";
-        SqlCommand Checkuser = new SqlCommand(cmdStr, con);
-        Checkuser.Parameters.AddWithValue("@username", Login1.UserName);
-        Checkuser.Parameters.AddWithValue("@password", Login1.Password);
-        if ((int) Checkuser.ExecuteScalar() > 0)
+        //string cmdStr = "SELECT COUNT(*) FROM [User] WHERE number = @username AND password = @password";
+        //SqlCommand Checkuser = new SqlCommand(cmdStr, con);
+        //Checkuser.Parameters.AddWithValue("@username", Login1.UserName);
+        //Checkuser.Parameters.AddWithValue("@password", Login1.Password);
+
+
+
+        if (BusinessTier.User.validateUserLogin(Login1.UserName, Login1.Password) == true)
         {
             e.Authenticated = true;
         }

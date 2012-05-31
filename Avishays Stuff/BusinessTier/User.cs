@@ -37,7 +37,14 @@ namespace BusinessTier
 
         public static Boolean validateUserLogin(String name, String password)
         {
-            return Boolean.Parse(tableAdapter.checkUserPassword(name, password).ToString());
+            if (int.Parse(tableAdapter.checkUserPassword(name, password).ToString()) == 1)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
         
     }

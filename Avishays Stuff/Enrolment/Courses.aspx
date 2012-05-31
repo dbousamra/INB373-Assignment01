@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="Subjects.aspx.cs" Inherits="Subjects" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="Courses.aspx.cs" Inherits="Courses" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
 </asp:Content>
@@ -14,7 +14,7 @@
             </th>
         </thead>
         <tbody>
-            <asp:Repeater ID="Repeater2" runat="server" DataSourceID="Courses">
+            <asp:Repeater ID="Repeater2" runat="server" DataSourceID="CoursesData">
                 <ItemTemplate>
                     <tr>
                         <td>
@@ -34,8 +34,8 @@
                         </td>
                     </tr>
                 </ItemTemplate>
-            </asp:Repeater>
-            <asp:ObjectDataSource ID="Courses" runat="server" OldValuesParameterFormatString="original_{0}" SelectMethod="GetAllCourses" TypeName="DataAccess.StudentDatasourceTableAdapters.CourseTableAdapter"></asp:ObjectDataSource>
+            </asp:Repeater>            
         </tbody>
     </table>
+    <asp:ObjectDataSource ID="CoursesData" runat="server" OldValuesParameterFormatString="original_{0}" SelectMethod="GetAllCourses" TypeName="DataAccess.StudentDatasourceTableAdapters.CourseTableAdapter"></asp:ObjectDataSource>
 </asp:Content>
