@@ -55,7 +55,7 @@
                                         <%# DataBinder.Eval(Container.DataItem,"course_name") %>
                                     </div>
                                     <div style="display: <%# System.Convert.IsDBNull(DataBinder.Eval(Container.DataItem, "course_name")) ? "block" : "none"%>;">
-                                        <a class="btn btn-primary btn-large" href="/Enrolment/Courses.aspx">Enrol now</a>
+                                        <a class="btn btn-primary btn-large" href="Courses.aspx">Enrol now</a>
                                     </div>
                                 </td>
                             </tr>
