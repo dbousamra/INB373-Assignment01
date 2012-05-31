@@ -30,13 +30,13 @@
                             </tr>
                             <tr>
                                 <td>
-                                    Student #:
+                                    User #:
                                 </td>
                                 <td>
                                     <%# DataBinder.Eval(Container.DataItem,"number") %>
                                 </td>
                             </tr>
-                            <tr>
+                            <tr style="display: <%# System.Convert.ToInt32(DataBinder.Eval(Container.DataItem, "user_type_id")) == 1 ? "table-row" : "none"%>;">
                                 <td>
                                     Enrolment type:
                                 </td>
@@ -46,7 +46,7 @@
                                     </div>
                                 </td>
                             </tr>
-                            <tr>
+                            <tr style="display: <%# System.Convert.ToInt32(DataBinder.Eval(Container.DataItem, "user_type_id")) == 1 ? "table-row" : "none"%>;">
                                 <td>
                                     Course:
                                 </td>
@@ -62,17 +62,15 @@
                         </tbody>
                     </table>
                 </div>
-                <div class="span6" style="display: <%# System.Convert.IsDBNull(DataBinder.Eval(Container.DataItem, "course_name")) ? "block" : "none"%>;">
-                    No subjects found.
-                </div>
-                <div class="span6" style="display: <%# System.Convert.IsDBNull(DataBinder.Eval(Container.DataItem, "course_name")) ? "none" : "block"%>;">
+                <div style="display: <%# System.Convert.ToInt32(DataBinder.Eval(Container.DataItem, "user_type_id")) == 2 ? "block" : "none"%>;">
+                    <div class="span6">
                     <h2>
-                        <%# DataBinder.Eval(Container.DataItem,"course_name") %></h2>
+                        My subjects</h2>
                     <p>
-                        You are following these subjects:</p>
+                        You are teaching these subjects:</p>
                     <table class="table table-bordered table-striped">
                         <tbody>
-                            <asp:Repeater ID="Repeater1" runat="server" DataSourceID="ObjectDataSource2">
+                            <asp:Repeater ID="Repeater2" runat="server" DataSourceID="ObjectDataSource2">
                                 <ItemTemplate>
                                     <tr>
                                         <td>
@@ -92,6 +90,40 @@
                             </asp:Repeater>
                         </tbody>
                     </table>
+                </div>
+                </div>
+                <div style="display: <%# System.Convert.ToInt32(DataBinder.Eval(Container.DataItem, "user_type_id")) == 1 ? "block" : "none"%>;">
+                    <div class="span6" style="display: <%# System.Convert.IsDBNull(DataBinder.Eval(Container.DataItem, "course_name")) ? "block" : "none"%>;">
+                        No subjects found.
+                    </div>
+                    <div class="span6" style="display: <%# System.Convert.IsDBNull(DataBinder.Eval(Container.DataItem, "course_name")) ? "none" : "block"%>;">
+                        <h2>
+                            <%# DataBinder.Eval(Container.DataItem,"course_name") %></h2>
+                        <p>
+                            You are following these subjects:</p>
+                        <table class="table table-bordered table-striped">
+                            <tbody>
+                                <asp:Repeater ID="Repeater1" runat="server" DataSourceID="ObjectDataSource2">
+                                    <ItemTemplate>
+                                        <tr>
+                                            <td>
+                                                <%# DataBinder.Eval(Container.DataItem,"subject_code") %>
+                                            </td>
+                                            <td>
+                                                <%# DataBinder.Eval(Container.DataItem,"name") %>
+                                            </td>
+                                            <td>
+                                                <a href="Subject.aspx?id=<%# DataBinder.Eval(Container.DataItem, "subject_id")%>" class="btn btn-info">
+                                                    <div class="icon-info-sign icon-white">
+                                                    </div>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    </ItemTemplate>
+                                </asp:Repeater>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
         </ItemTemplate>
