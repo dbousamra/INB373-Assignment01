@@ -34,5 +34,11 @@ namespace BusinessTier
         {
             return int.Parse(tableAdapter.getUserIDByLoginName2(name).ToString());
         }
+
+        public static Boolean validateUserLogin(String name, String password)
+        {
+            return Boolean.Parse(tableAdapter.checkUserPassword(name, password).ToString());
+        }
+        
     }
 }
