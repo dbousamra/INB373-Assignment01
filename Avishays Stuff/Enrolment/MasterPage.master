@@ -4,6 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head id="Head1" runat="server">
     <title>Student Enrolment</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <base href="/Enrolment/" />
     <link href="assets/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css" />
     <link href="assets/bootstrap/css/bootstrap-responsive.css" rel="stylesheet" type="text/css" />
@@ -64,10 +65,13 @@
         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
         </asp:ContentPlaceHolder>
         <footer class="footer">
-        <p class="pull-left">&copy; Team 91 - INB373 <asp:Label ID="yearLabel" runat="server" /></asp:Label>
-        </p>
-        <p class="pull-right"><a href="#">Back to top</a></p>
-      </footer>
+            <p class="pull-left">
+                &copy; Team 91 - INB373
+                <asp:Label ID="yearLabel" runat="server" />               
+            </p>
+            <p class="pull-right">
+                <a href="#">Back to top</a></p>
+        </footer>
     </div>
     </form>
 </body>
